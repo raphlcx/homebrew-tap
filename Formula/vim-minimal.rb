@@ -23,7 +23,7 @@ class VimMinimal < Formula
     because: "vim and macvim both install vi* binaries"
 
   conflicts_with "vim",
-    because: "vim-minimal and vim both installs vim"
+    because: "vim-minimal and vim both install vim"
 
   def install
     # https://github.com/Homebrew/homebrew-core/pull/1046
