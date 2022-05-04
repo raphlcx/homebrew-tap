@@ -7,7 +7,9 @@ class VimMinimal < Formula
   license "Vim"
   head "https://github.com/vim/vim.git", branch: "master"
 
-  depends_on "gettext"
+  # Does Vim depend on gettext in the first place?
+  # depends_on "gettext"
+  #
   # depends_on "lua"
   # depends_on "ncurses"
   # depends_on "perl"
@@ -19,6 +21,9 @@ class VimMinimal < Formula
 
   conflicts_with "macvim",
     because: "vim and macvim both install vi* binaries"
+
+  conflicts_with "vim",
+    because: "vim-minimal and vim both installs vim"
 
   def install
     # https://github.com/Homebrew/homebrew-core/pull/1046
