@@ -1,4 +1,4 @@
-cask "crossover" do
+cask "crossover211" do
   version "21.1.0.33869"
   sha256 "3c130e2eb0fd3d552484f072dc20e665048698e7dffb06c4f3890013eff5749c"
 
