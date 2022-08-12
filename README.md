@@ -6,4 +6,10 @@ Add tap:
 brew tap raphlcx/tap
 ```
 
-[Browse packages](./Formula) to install.
+Available formulae:
+
+- vim-minimal
+
+Available casks:
+
+- awscli
