@@ -13,3 +13,4 @@ Available formulae:
 Available casks:
 
 - awscli
+- CrossOver (v21.1)
