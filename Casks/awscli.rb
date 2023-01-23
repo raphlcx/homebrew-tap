@@ -1,6 +1,6 @@
 cask "awscli" do
-  version "2.9.10"
-  sha256 "fd22943473eec38c1a101d0b3dc93f00e529b00f6d942550a8f18c25c72a6857"
+  version "2.9.17"
+  sha256 "31c72f7faa9ec7dec590b3e58cf35d0e7728cc5e345692eac25bb78617a8c768"
 
   url "https://awscli.amazonaws.com/AWSCLIV2-#{version}.pkg"
   name "AWS Command Line Interface"
