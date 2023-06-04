@@ -13,6 +13,7 @@ Available formulae:
 Available casks:
 
 - awscli
+- aws-sam-cli
 - CrossOver (v21.1)
 
 ## Maintenance note
