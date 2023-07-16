@@ -17,10 +17,10 @@ class VimMinimal < Formula
   # depends_on "ruby"
 
   conflicts_with "ex-vi",
-    because: "vim and ex-vi both install bin/ex and bin/view"
+    because: "vim-minimal and ex-vi both install bin/ex and bin/view"
 
   conflicts_with "macvim",
-    because: "vim and macvim both install vi* binaries"
+    because: "vim-minimal and macvim both install vi* binaries"
 
   conflicts_with "vim",
     because: "vim-minimal and vim both install vim"
