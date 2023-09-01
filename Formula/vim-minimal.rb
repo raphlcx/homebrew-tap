@@ -2,8 +2,8 @@ class VimMinimal < Formula
   desc "Minimal vim with no interpreter interfaces"
   homepage "https://www.vim.org/"
   # vim should only be updated every 50 releases on multiples of 50
-  url "https://github.com/vim/vim/archive/v9.0.1650.tar.gz"
-  sha256 "4ff45a7ae77f0a3d9d548f965020021576ff33668f67fb78c4ab62f37d810648"
+  url "https://github.com/vim/vim/archive/v9.0.1800.tar.gz"
+  sha256 "bc65a1361a7473c79c63f3a9000474f5340eb73d9c5b8c987100eafdb7016f80"
   license "Vim"
   head "https://github.com/vim/vim.git", branch: "master"
 
