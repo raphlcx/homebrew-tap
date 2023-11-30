@@ -1,6 +1,6 @@
 cask "aws-sam-cli" do
-  version "1.100.0"
-  sha256 "604dca05d13dac09e8343b8099c19fe844d74cda6ff065e622717f09f7cd59de"
+  version "1.103.0"
+  sha256 "84d0346acf7f84d1b227888115a3bb59afbb15ba407f189351a07e8d04f81fb9"
 
   url "https://github.com/aws/aws-sam-cli/releases/download/v#{version}/aws-sam-cli-macos-arm64.pkg"
   name "AWS Serverless Application Model (AWS SAM) Command Line Interface"
