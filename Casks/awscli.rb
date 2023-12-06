@@ -7,6 +7,8 @@ cask "awscli" do
   desc "Interact with AWS services using commands in your command-line shell"
   homepage "https://awscli.amazonaws.com/v2/documentation/api/latest/index.html"
 
+  conflicts_with formula: "awscli"
+
   pkg "AWSCLIV2-#{version}.pkg"
 
   uninstall pkgutil: "com.amazon.aws.cli2",
