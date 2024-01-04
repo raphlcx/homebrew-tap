@@ -12,9 +12,12 @@ Available formulae:
 
 Available casks:
 
-- awscli
-- aws-sam-cli
+- AWS CLI
+- AWS Amplify CLI
+- AWS SAM CLI
 - CrossOver (v21.1)
+- Dart Sass
+- Snyk CLI
 
 ## Maintenance note
 
