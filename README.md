@@ -8,6 +8,7 @@ brew tap raphlcx/tap
 
 Available formulae:
 
+- mpv-light
 - vim-minimal
 
 Available casks:
