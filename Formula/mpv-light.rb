@@ -1,5 +1,5 @@
 class MpvLight < Formula
-  desc "Light-weight MPV in macOS app bundle"
+  desc "Lightweight mpv in macOS app bundle"
   homepage "https://mpv.io"
   url "https://github.com/mpv-player/mpv/archive/refs/tags/v0.37.0.tar.gz"
   sha256 "1d2d4adbaf048a2fa6ee134575032c4b2dad9a7efafd5b3e69b88db935afaddf"
