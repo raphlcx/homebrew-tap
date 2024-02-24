@@ -1,21 +1,21 @@
 #!/usr/bin/env bash
 
-for f in Formula/*
+for formula in Formula/*
 do
-  checksum=$(brew fetch --formula --quiet "$f" 2>/dev/null | cut -d ":" -f 2 | tr -d " ")
-  echo "$f $checksum"
-  sed -i '' "s/sha256.*/sha256 \"$checksum\"/" "$f"
+  checksum=$(brew fetch --formula --quiet "$formula" 2>/dev/null | cut -d ":" -f 2 | tr -d " ")
+  echo "$formula $checksum"
+  sed -i '' "s/sha256.*/sha256 \"$checksum\"/" "$formula"
 done
 
-for c in Casks/*
+for cask in Casks/*
 do
   # Skip unused cask
-  if [ "$c" = "Casks/crossover211.rb" ]
+  if [ "$cask" = "Casks/crossover211.rb" ]
   then
     continue
   fi
 
-  checksum=$(brew fetch --cask --quiet "$c" 2>/dev/null | cut -d ":" -f 2 | tr -d " ")
-  echo "$c $checksum"
-  sed -i '' "s/sha256.*/sha256 \"$checksum\"/" "$c"
+  checksum=$(brew fetch --cask --quiet "$cask" 2>/dev/null | cut -d ":" -f 2 | tr -d " ")
+  echo "$cask $checksum"
+  sed -i '' "s/sha256.*/sha256 \"$checksum\"/" "$cask"
 done
