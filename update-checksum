@@ -9,12 +9,6 @@ done
 
 for cask in Casks/*
 do
-  # Skip unused cask
-  if [ "$cask" = "Casks/crossover211.rb" ]
-  then
-    continue
-  fi
-
   checksum=$(brew fetch --cask --quiet "$cask" 2>/dev/null | cut -d ":" -f 2 | tr -d " ")
   echo "$cask $checksum"
   sed -i '' "s/sha256.*/sha256 \"$checksum\"/" "$cask"
