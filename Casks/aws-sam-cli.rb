@@ -10,7 +10,7 @@ cask "aws-sam-cli" do
   pkg "aws-sam-cli-macos-arm64.pkg"
 
   uninstall pkgutil: "com.amazon.aws.sam.cli",
-            delete:  "/usr/local/aws-sam-cli"
+            delete:  ["/usr/local/aws-sam-cli", "/usr/local/bin/sam"]
 
   caveats do
     files_in_usr_local
