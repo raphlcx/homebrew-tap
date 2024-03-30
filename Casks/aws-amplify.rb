@@ -1,6 +1,6 @@
 cask "aws-amplify" do
-  version "12.10.1"
-  sha256 "9c1a8b6c34d71e7a591913450126be3f156a662e2addcaa6183b5d5ce96e0157"
+  version "12.10.3"
+  sha256 "0775b77c02d9503a042d712210211ab1e5fefbcfce7b8be08bbd13e239d9cb64"
 
   url "https://github.com/aws-amplify/amplify-cli/releases/download/v#{version}/amplify-pkg-macos.tgz"
   name "AWS Amplify Command Line Interface"
