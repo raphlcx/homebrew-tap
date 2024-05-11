@@ -14,9 +14,6 @@ Available formulae:
 Available casks:
 
 - AWS CLI
-- AWS Amplify CLI
-- AWS SAM CLI
-- CrossOver (v21.1)
 - Dart Sass
 - Snyk CLI
 
