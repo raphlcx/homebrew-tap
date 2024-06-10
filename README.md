@@ -17,6 +17,7 @@ Available casks:
 - Dart Sass
 - Snyk CLI
 - RPCS3
+- PCSX2
 
 ## Maintenance note
 
