@@ -16,6 +16,7 @@ Available casks:
 - AWS CLI
 - Dart Sass
 - Snyk CLI
+- RPCS3
 
 ## Maintenance note
 
