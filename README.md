@@ -6,19 +6,6 @@ Add tap:
 brew tap raphlcx/tap
 ```
 
-Available formulae:
-
-- mpv-light
-- vim-minimal
-
-Available casks:
-
-- AWS CLI
-- Dart Sass
-- Snyk CLI
-- RPCS3
-- PCSX2
-
 ## Maintenance note
 
 1. Update the version in respective formula or cask.
