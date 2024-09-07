@@ -1,6 +1,6 @@
 cask "snyk-cli" do
-  version "1.1292.1"
-  sha256 "699f75ff0a64913ec84f27755541e7e6f43a4d8f26b1269a2749cf8a78519bf6"
+  version "1.1293.0"
+  sha256 "c3ff853e7d56f4a52fa287071feab476902c5efd3c095c6954aa683e2b005f1e"
 
   url "https://static.snyk.io/cli/v#{version}/snyk-macos-arm64"
   name "Snyk Command Line Interface"
