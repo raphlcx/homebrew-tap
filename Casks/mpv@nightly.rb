@@ -1,4 +1,4 @@
-cask "mpv-nightly" do
+cask "mpv@nightly" do
   version "11770447601"
   sha256 "f3698808a126b682dc8eefcdd0c89e710c05b339f246a4218760e3630dd0cc05"
 
@@ -11,7 +11,6 @@ cask "mpv-nightly" do
 
   app "mpv.app"
   binary "#{appdir}/mpv.app/Contents/MacOS/mpv"
-  manpage "documentation/man/mpv.1"
 
   zap trash: [
     "~/.config/mpv",
