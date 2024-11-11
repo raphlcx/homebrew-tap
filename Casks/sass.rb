@@ -1,6 +1,6 @@
 cask "sass" do
-  version "1.78.0"
-  sha256 "8a7f718bc3ddf72c6c271a34c343b1ea9e39d8414ed6f0487df6e05e54e9e4a8"
+  version "1.80.6"
+  sha256 "51f5d170ad27ac9635ba94984974a5b8a509548f1bb8b595c8563cc6141228ba"
 
   url "https://github.com/sass/dart-sass/releases/download/#{version}/dart-sass-#{version}-macos-arm64.tar.gz"
   name "Sass"
