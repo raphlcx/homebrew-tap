@@ -5,7 +5,7 @@ cask "snyk-cli" do
   url "https://static.snyk.io/cli/v#{version}/snyk-macos-arm64"
   name "Snyk Command Line Interface"
   desc "Scans and monitors projects for security vulnerabilities"
-  homepage "https://snyk.io/"
+  homepage "https://github.com/snyk/cli"
 
   conflicts_with formula: "snyk-cli"
 
