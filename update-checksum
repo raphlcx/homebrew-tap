@@ -3,7 +3,8 @@
 for formula in Formula/*
 do
   [ -d "$formula" ] && continue
-  checksum=$(brew fetch --formula --quiet "$formula" 2>/dev/null | cut -d ":" -f 2 | tr -d " ")
+  brew fetch --formula --quiet "$formula" >/dev/null 2>&1
+  checksum=$(sha256sum --quiet "$(find "$(brew --cache)" | grep "$(basename -s .rb "$formula")")")
   echo "$formula $checksum"
   sed -i '' "s/sha256.*/sha256 \"$checksum\"/" "$formula"
 done
@@ -11,7 +12,8 @@ done
 for cask in Casks/*
 do
   [ -d "$cask" ] && continue
-  checksum=$(brew fetch --cask --quiet "$cask" 2>/dev/null | cut -d ":" -f 2 | tr -d " ")
+  brew fetch --cask --quiet "$cask" >/dev/null 2>&1
+  checksum=$(sha256sum --quiet "$(find "$(brew --cache)"/Cask | grep "$(basename -s .rb "$cask")")")
   echo "$cask $checksum"
   sed -i '' "s/sha256.*/sha256 \"$checksum\"/" "$cask"
 done
