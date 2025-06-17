@@ -1,6 +1,6 @@
 cask "mpv@nightly" do
-  version "14533440437"
-  sha256 "d17f0d71ad82b55946c8b0aca2f52cb147493b3b2e3dc743180986eae17ad19c"
+  version "15615650221"
+  sha256 "dd09ca202f193f4f46d8201615416f655bbb0a666866fb4b94b173833d20d5bc"
 
   url "https://nightly.link/mpv-player/mpv/workflows/build/master/mpv-macos-15-arm.zip"
   name "mpv"
