@@ -7,7 +7,5 @@ cask "aws-amplify" do
   desc "Build full-stack web and mobile apps in hours. Easy to start, easy to scale"
   homepage "https://aws.amazon.com/amplify"
 
-  conflicts_with formula: "aws-amplify"
-
   binary "amplify-pkg-macos", target: "amplify"
 end

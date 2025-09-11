@@ -7,7 +7,5 @@ cask "snyk-cli" do
   desc "Scans and monitors projects for security vulnerabilities"
   homepage "https://github.com/snyk/cli"
 
-  conflicts_with formula: "snyk-cli"
-
   binary "snyk-macos-arm64", target: "snyk"
 end
