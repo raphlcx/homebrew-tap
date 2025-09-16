@@ -1,5 +1,5 @@
 cask "awscli" do
-  version "2.27.36"
+  version "2.30.1"
   sha256 "59aa278bdd51f434d05f6f43a0e9c337cbf66313ab15f977e089df26f590ef79"
 
   url "https://awscli.amazonaws.com/AWSCLIV2-#{version}.pkg"
