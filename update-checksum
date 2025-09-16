@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
+export HOMEBREW_DEVELOPER=1
+
 for formula in Formula/*
 do
   [ -d "$formula" ] && continue
   brew fetch --formula --quiet "$formula" >/dev/null 2>&1
-  checksum=$(sha256sum --quiet "$(find "$(brew --cache)" | grep "$(basename -s .rb "$formula")")")
+  checksum=$(sha256sum --quiet "$(find "$(brew --cache)" | grep -i "$(basename -s .rb "$formula")")")
   echo "$formula $checksum"
   sed -i '' "s/sha256.*/sha256 \"$checksum\"/" "$formula"
 done
@@ -13,7 +15,7 @@ for cask in Casks/*
 do
   [ -d "$cask" ] && continue
   brew fetch --cask --quiet "$cask" >/dev/null 2>&1
-  checksum=$(sha256sum --quiet "$(find "$(brew --cache)"/Cask | grep "$(basename -s .rb "$cask")")")
+  checksum=$(sha256sum --quiet "$(find "$(brew --cache)"/Cask | grep -i "$(basename -s .rb "$cask" | cut -d @ -f 1)")")
   echo "$cask $checksum"
   sed -i '' "s/sha256.*/sha256 \"$checksum\"/" "$cask"
 done
